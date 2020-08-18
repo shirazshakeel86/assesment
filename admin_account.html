@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Home Page</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="header"><h1>Bank Management System</h1></div><br>
+     
+        <div class="navigation">
+        <a href='admin_home.php'>Home</a>
+        <a href='admin_customers.php'>Customers</a>
+        <a href='admin_account.php'>Acounts</a>
+        <a href="transaction.html">Transactions</a>
+        <a href="admin_loan.php">Loan</a>
+        <a href='about.html'>About Us</a>
+        <a href='admin_profile.php'>Profile</a>
+        <a href="logout.php" class="logout">Log Out</a>
+    </div>
+        <center>
+        <div id="profile">
+          <table id="table">
+              <tr colspan="5";><h1>Accounts Details</h1></tr>
+              <tr>
+                <th>Account-ID</th>
+                <th>Customer-ID</th>
+                <th>Category</th>
+                <th>Balance</th>
+              </tr>
+              <?php
+                $conn = mysqli_connect("localhost", "root", "", "bank");
+                $query="SELECT * FROM account";
+                $result=mysqli_query($conn,$query);
+                while($row=$result->fetch_assoc())
+                {
+              ?>
+              <tr>
+                  <td><?php echo $row['acc_id'];?></td>
+                  <td><?php echo $row['cust_id'];?></td>
+                  <td><?php echo $row['category'];?></td>
+                  <td><?php echo $row['balance'];?></td>
+              </tr>
+
+              <?php
+                }  
+              ?>
+          </table>
+      </div>
+    </center>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bank Management System</title>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+    <script type="text/javascript"> 
+      function validate()
+      {
+          var uname=document.getElementById("name");
+          var password=document.getElementById("pass");
+          if(uname.value=""||password.value=="")
+        {
+            alert("Fill User or Password"); 
+            return false;
+        }
+        else{
+            return true;
+        }
+      }
+  </script>
+</head>
+<body >
+  <div class="header">
+    <h1>Bank Management System</h1>
+    <div>
+      <br>
+      
+  <div class="login">
+    <div class="login_form">
+      <img src="images/login.png">
+      <h3>User LOGIN Here</h3>
+      <form action="user_login.php" method="post">
+        <div class="form-input">
+          <input type="text" name="username" id="name" placeholder="Enter the User Name"/>  
+        </div>
+        <div class="form-input">
+          <input type="password" name="password" id="pass" placeholder="password"/>
+        </div>
+          <input type="submit" name="submit" value="LOGIN" class="btn-login"/>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

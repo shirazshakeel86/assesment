@@ -1,0 +1,48 @@
+
+include('adminsession.php');
+if(!isset($_SESSION['login_user'])){
+header("location: index.html"); // Redirecting To Home Page
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<title>Your Home Page</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="header"><h1>Bank Management System</h1></div><br>
+     
+        <div class="navigation">
+            <a href='admin_home.html'>Home</a>
+            <a href='admin_customers.php'>Customers</a>
+            <a href='admin_account.php'>Acounts</a>
+            <a href="transaction.html">Transactions</a>
+            <a href="admin_loan.php">Loan</a>
+            <a href='about.html'>About Us</a>
+            <a href='admin_profile.php'>Profile</a>
+            <a href="logout.php" class="logout">Log Out</a>
+        </div>
+      
+    <center>
+        <div id="profile">
+            <h3>Welcome : <i><?php echo $login_session; ?></i></h3>  <br>                 
+                                                            
+            <div class="func">
+                <p>
+                    Admin can register, delete, and reset password of customers.
+                    Admin can also see all the details of customers, transactions and loan history.
+                </p>
+            </div>
+            <div class="button">
+                <button><a href="register.html">Register Customer</a></button>
+               <br>
+                <button><a href="deleteCust.html">Delete Customer</a></button>
+                <br>
+                <button><a href="register.html">Reset Customer password</a></button>
+            </div>  
+        </div>
+    </center>
+        
+</body>
+</html>

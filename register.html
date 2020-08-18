@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bank Management System</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Bank Management System</h1>
+    </div>
+    <div class="navigation">
+        <a href='adminprofile.php'>Home</a>
+        <a href='admin_customers.php'>Customers</a>
+        <a href='admin_account.php'>Acounts</a>
+        <a href="transaction.html">Transactions</a>
+        <a href="admin_loan.php">Loan</a>
+        <a href='about.html'>About Us</a>
+        <a href='admin_profile.php'>Profile</a>
+        <a href="logout.php" class="logout">Log Out</a>
+    </div>
+      <br>
+    <center>
+     <div class="register">
+         <h3>Register Customer</h3>
+         <p>Fill this form to register you constomers.</p>
+         <form action="insert.php" method="post">
+          <label class="name">Name:</label><br>
+          <input type="text" name="uname" placeholder="Enter Full name" class="inputfield" required><br>
+          <label class="name">Email:</label><br>
+          <input type="text" name="email" placeholder="123@abc.com" class="inputField" required><br>
+          <label class="name">Date of Birth:</label><br>
+          <input type="date" name="dob" placeholder="123@abc.com" class="inputField" required><br>
+           <label class="name">Gender:</label><br>
+            Male:<input type="radio" name="gender" value="M">
+            Female <input type="radio" name="gender" value="F">
+             Others<input type="radio" name="gender" value="O"><br>
+          <label class="name">Address:</label><br>
+          <input type="text" name="address" placeholder="street\town\city\country" class="inputField" required><br>
+          <label class="name">Mobile No:</label><br>
+          <input type="text" name="phoneNo" placeholder="0300000000" class="inputField" required><br>
+          <label class="name">Balance:</label><br>
+          <input type="text" name="balance" placeholder="0000000000" class="inputField" required><br>
+        <label class="name">Account Category:</label><br>
+            Current<input type="radio" name="category" value="Current">
+            Saving<input type="radio" name="category" value="Saving">
+            Student<input type="radio" name="category" value="Student"><br>
+         <label class="name">Password:</label><br>
+          <input type="password" name="password1" placeholder="password" class="inputField" required><br>
+          <label class="name">Confirm Password:</label><br>
+          <input type="password" name="password2" placeholder="Re-Enter your password" class="inputField" required><br>
+          <input type="submit" value="Register Now" name="submit" class="btn">
+         </form>
+    </div>
+    </center>
+</body>
+</html>

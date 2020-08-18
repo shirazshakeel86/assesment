@@ -1,0 +1,253 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+body{
+	background-image: url("bms.jpg"); 
+  background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+	background-size: cover;
+}
+.header {
+  background-color: transparent;
+  padding: 20px;
+  text-align: center;
+}
+.header h1{
+    color: aqua;
+}
+.navigation {
+  overflow: hidden;
+  width:100%;
+  background-color:aliceblue;
+  font-size:20px;
+
+}
+/* Style the topnav links */
+.navigation a {
+  float: left;
+  width:10%;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.navigation .logout{
+    float: right;
+    width:10%;
+    display:flex;
+    background-color:chartreuse;
+}
+.navigation a:active{
+    background-color: azure;
+    color: aqua;
+}
+/* Change color on hover */
+.navigation a:hover {
+    background-color: #ddd;
+  color: green;
+}
+.container{
+
+  height: 400px;
+  width:200px;
+  margin:auto;
+  
+}
+.container button{
+  height: auto;
+  padding:1px;
+  width:200px;
+  margin:5px;
+  font-size: 20px;
+  background-color: silver;
+  
+}
+.container buttton a:hover{
+    background-color:darkseagreen;
+    color:red;
+}
+.container button a{
+  color:blue;
+  
+
+}
+.container button a:hover{
+  background-color: black;
+  color:red;
+}
+.login_form{
+	width: 400px;
+	height: auto;
+	text-align: center;
+	margin: 0 auto;
+	background-color: silver;
+	margin-top: 160px;
+}
+
+.login_form img{
+    border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	margin-top: -80px;
+} 
+input[type="text"],input[type="password"],input[type="date"]{
+	margin-top: 20px;
+	height: 45px;
+	width: 300px;
+	font-size: 18px;
+	margin-bottom: 20px;
+	background-color: #fff;
+	padding-left: 40px;
+}
+ 
+.form-input::before{
+	content: "\f007";
+	font-family: "FontAwesome";
+	padding-left: 07px;
+	padding-top: 40px;
+	position: absolute;
+	font-size: 35px;
+	color: #2980b9; 
+}
+ 
+.form-input:nth-child(2)::before{
+	content: "\f023";
+}
+
+ 
+.btn-login{
+	padding: 15px 25px;
+	border: none;
+	background-color: #27ae60;
+	color: #fff;
+}
+.register
+{
+    width:30%;
+    height:auto;
+    border: 2px solid;
+    background-color:lavender;
+}
+
+.register h3{
+    font-size: 40px;
+}
+.register p{
+    font-size: 25px;
+}
+.register .name{
+    font-size: 30px;
+    text-align: left;
+}
+.btn{
+	padding: 15px 25px;
+	border: none;
+	background-color: #27ae60;
+	color: #fff;
+}
+#profile{
+    width:90%;
+    align-content:flex-start;
+    background-color: aliceblue;
+}
+#profile h3
+{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    text-align: center;
+    font-size: 30px;
+   
+}
+
+.button{
+    background-color: aliceblue;
+    float: left;
+    width:40%;
+    height:300px;
+}
+.button1 button{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    background-color: silver;
+    width:100px;
+    height:auto;
+    font-size: 15px;
+    padding: 4px;
+}
+.button1 buttton:hover{
+    background-color:darkseagreen;
+    color:red;
+}
+.button1 button a{
+  color:blue;
+  
+
+}
+.button1 button a:hover{
+  background-color: black;
+  color:chartreuse;
+}
+.button button{
+    
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    background-color: silver;
+    width:100px;
+    height:auto;
+    font-size: 15px;
+    padding: 4px;
+}
+.button buttton:hover{
+    background-color:darkseagreen;
+    color:red;
+}
+.button button a{
+  color:blue;
+  
+
+}
+.button button a:hover{
+  background-color: black;
+  color:chartreuse;
+}
+.func{
+    background-color:aliceblue;
+    margin-top: 0px;
+    
+    float:right;
+    width:60%;
+    height:300px;
+}
+.func p{
+    text-align: justify;
+}
+#table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#table td, #table th {
+    height: 5%;
+  border: 1px solid grey;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:hover {background-color: #ddd;}
+
+#table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+    
+  text-align: left;
+  background-color: #4CAF50;
+  color: white;
+}
+
+
